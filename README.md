@@ -1,7 +1,8 @@
 Github Widescreen
 ===========
 
-Extension to Google Chrome to toggle the width of Github
+Extension to Google Chrome to toggle the width of git.linecorp.com
+
 
 Installation
 ----------

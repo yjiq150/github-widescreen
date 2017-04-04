@@ -9,8 +9,12 @@ function getState(callback){
 function toggleCssClass(state){
   var WIDE_CSS_CLASS = 'wide';
   var body = document.querySelector('body');
-  var toggle = state ? body.classList.add : body.classList.remove;
-  toggle(WIDE_CSS_CLASS);
+   
+  if (state) {
+    body.classList.add(WIDE_CSS_CLASS)
+  } else {
+    body.classList.remove(WIDE_CSS_CLASS)
+  }
 }
 
 chrome.storage.onChanged.addListener(function (data) {
